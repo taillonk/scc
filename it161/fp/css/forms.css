@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], textarea {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #55ff21;
+    resize: vertical;
+  }
+
+  input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #55ff21;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 12px;
+    display: inline-block;
+    color: white;
+    font-style: italic;
+    font-size: 1.3em;
+  }
+  
+  input[type=submit] {
+    background-color: #55ff21;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border:1px solid #55ff21;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  input[type=submit]:hover {
+    color: #051747;
+    background-color: #d7ffca;
+  }
+  
+  .form-container {
+    border:1px solid #55ff21;
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 100%;
+    max-width:600px;
+  }
+
+  .newsletter-container {
+    border:1px solid #55ff21;
+    background-color: #000000;
+    padding: 20px;
+    width: 70%;
+    margin: 3% auto;
+  }
+
+  .form-row {
+    max-width: 200px;
+    margin: auto;
+  }
+  
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    float: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+
+  /* Responsive rules */
+
+  /* DESKTOP */
+@media all and (min-width:1200px) {
+  .form-container {
+    padding: 5% 10%;
+    margin: 3% 5%;
+}
+
+}
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        float: right;
+      }
+    .form-container {
+        padding: 5% 10%;
+        margin: 3% 5%;
+    }
+    .newsletter-container {
+      padding: 5% 5%;
+      margin: 3%;
+      width: 100%;
+  }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        float: right;
+      }
+    .form-container {
+        padding: 5% 10%;
+        margin: 2% 5%;
+    }
+
+    .newsletter-container {
+      padding: 5% 5%;
+      margin: 3%;
+      width: 100%;
+  }
+
+}

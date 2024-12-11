@@ -1,0 +1,404 @@
+/* Global rules */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-family: "Lato", sans-serif;
+    background-color: #000000;
+    font-style: normal;
+    font-size: 1em;
+}
+
+body {
+    margin: 0em;
+    /* removes gap at top of page */
+}
+
+h1.page-header {
+    font-family: "Splash", cursive;
+    background-color: #e1fa00;
+    font-weight: 300;
+    font-size: 8em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+main.wrapper {
+    background-color: #e1fa00;
+    overflow: auto;
+}
+
+::selection {
+    color: #000000;
+    background: #68ff2c21;
+}
+
+h1 {
+    font-family: "Splash", cursive;
+    font-weight: normal;
+    margin: auto;
+    color: #000000;
+    font-size: 4em;
+    background-color: #b6c71f36;
+}
+
+p {
+    margin: 1em;
+    /* Top Right Bottom Left (TRBL) */
+    text-align: justify;
+    font-size: large;
+}
+
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 2%;
+    text-align: center;
+    
+
+}
+
+h2.video {
+    background-color: #b6c71f36;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #051747;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    padding: 1em;
+}
+
+p.footer {
+    margin: 0%;
+    /* Top Right Bottom Left (TRBL) */
+    text-align: center;
+}
+
+iframe {
+    margin: auto;
+    width:100%;
+    height:450px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+img {
+    border-style:solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+picture.profile img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.photo-column-container {
+    max-width: 500px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+}
+
+.text-column-container {
+    max-width:500px;
+    margin-top: 3%
+}
+
+.video-column-container {
+    width: 550px;
+    margin: 0;
+}
+
+/* start positioning styles */
+
+.text-align-center {
+    text-align: center;
+}
+
+.margin-auto>div {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that float next to each other */
+.my-column {
+    float: left;
+    width: 50%;
+    min-height: 400px;
+}
+
+/* Clear floats after the columns */
+.my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Social Media Icons*/
+
+.fa-brands {
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-tiktok {
+    background: #ffffffb0;
+    color: rgb(0, 0, 0);
+}
+
+.fa-instagram {
+    background: #ffffffb0;
+    color: rgb(0, 0, 0);
+}
+
+.fa-youtube {
+    background: #ffffffb0;
+    color: rgb(0, 0, 0);
+}
+
+.fa-spotify {
+    background: #ffffffb0;
+    color: rgb(0, 0, 0);
+}
+
+.fa-itunes-note {
+    background: #ffffffb0;
+    color: rgb(0, 0, 0);
+}
+
+.social-container-header {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #E3FA00;
+}
+
+/* flexible image rules start here */
+
+.flexible img {
+    width: 100%;
+}
+
+.flexible-form {
+    width: 100%;
+    padding: 0px;
+    margin-top: 3px;
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* flexible image rules end here */
+
+/* end positioning styles */
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    h1.page-header {
+        width: 80%;
+        padding-left: 1%;
+    }
+
+    h1 {
+        line-height: 2em;
+    }
+
+    .social-container-header {
+        width: 80%;
+        padding-left: 1%;
+    }
+
+    picture.bio img {
+        width: 100%;
+        display: block;
+    }
+
+    contact-picture img {
+        display: block;
+        padding: 5% 0%;
+        margin: 1% 3%;
+    }
+
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    h1.page-header {
+        width: 90%;
+        padding: 0% 3%;
+        font-size: 7.5em;
+    }
+
+    p {
+        margin-top: 0%
+    }
+
+    h2 {
+        margin: 3%;
+    }
+
+    .social-container-header {
+        width: 90%;
+        padding: 0% 2%;
+    }
+
+    .photo-column-container {
+        margin:3% 3%;
+    }
+    
+    .text-column-container {
+        margin: 3% auto;
+    }
+
+    picture.profile img {
+        width: 90%;
+    }
+
+    picture.bio img {
+        float: right;
+        padding: 0%;
+        margin: 0%
+    }
+
+    iframe {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .video-column-container {
+        width: 300px;
+        margin: 0;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+
+    h1.page-header {
+        width: 100%;
+        font-size: 4em;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 2.1em;
+        line-height: 1.5em;
+    }
+
+    h2 {
+        width: 90%;
+        font-size: 1.1em;
+        margin: 3%;
+    }
+
+    h2.video {
+    margin-left: 5%;
+    } 
+
+    p {
+        font-size: smaller;
+    }
+
+    .social-container-header {
+        width: 100%;
+        padding-left: 1%;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .photo-column-container {
+        max-width: 400px;
+        margin:auto;
+    }
+    
+    .text-column-container  {
+        max-width:400px;
+        margin:auto;
+    }
+
+    .video-column-container {
+        width: 400px;
+        margin: 3%;
+    }
+
+    picture.profile img {
+        width: 100%;
+    }
+
+    picture.bio img {
+        width: 100%;
+        margin-top: 2%;;
+    }
+
+    .my-column {
+        width: 100%;
+        margin: 0px;
+    }
+
+    iframe {
+        width: 100%;
+
+    }
+
+    .flexible {
+        display: flex;
+        width: 100%;
+    }
+
+}
